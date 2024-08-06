@@ -4,10 +4,11 @@ function ShoppingList({ items }) {
     return (
         <ul>
             {items.map((i) => (
-                <ShoppingListItem
-                    item={i.item}
-                    quantity={i.quantity}
-                    completed={i.completed}
+                <ShoppingListItem {...i}
+                    // individual assignments replaced by spread (...) operator
+                    // item={i.item}
+                    // quantity={i.quantity}
+                    // completed={i.completed}
                 />
             ))}
         </ul>
