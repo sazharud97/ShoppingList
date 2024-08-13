@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
+import Clicker from './Clicker'
 
 function App() {
   const data = [
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <div>
+        <Clicker />
         <PropertyList properties={properties} />
         {/* <ShoppingList items={data} /> */}
       </div>
