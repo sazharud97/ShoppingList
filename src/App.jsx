@@ -4,6 +4,7 @@ import './App.css'
 import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
 import Clicker from './Clicker'
+import Form from './Form'
 
 function App() {
   const data = [
@@ -21,14 +22,12 @@ function App() {
     { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
   ];
 
-  return (
-    <>
-      <div>
-        <Clicker />
-        <PropertyList properties={properties} />
-        {/* <ShoppingList items={data} /> */}
-      </div>
-    </>
+  return (<div>
+    <Clicker />
+    <Form />
+    <PropertyList properties={properties} />
+    {/* <ShoppingList items={data} /> */}
+  </div>
   )
 }
 
