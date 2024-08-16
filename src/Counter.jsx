@@ -1,0 +1,13 @@
+export default function Counter() {
+    let num = 0;
+    const incrementNum = () => {
+        num += 1;
+        console.log(num);
+    }
+    return (
+        <div>
+            <p>The count is: {num}</p>
+            <button onClick={incrementNum}>Click</button>
+        </div>
+    )
+}
