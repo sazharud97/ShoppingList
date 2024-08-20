@@ -1,4 +1,3 @@
-import { useState } from 'react'
 
 import './App.css'
 import ShoppingList from './ShoppingList'
@@ -6,6 +5,7 @@ import PropertyList from './PropertyList'
 import Clicker from './Clicker'
 import Form from './Form'
 import Counter from './Counter'
+import Toggler from './Toggler'
 
 function App() {
   const data = [
@@ -24,6 +24,7 @@ function App() {
   ];
 
   return (<div>
+    <Toggler />
     <Counter />
     <Clicker message={'hi'} buttonText={'Please text me'} />
     <Clicker message={'hi'} buttonText={'Please text me'} />
