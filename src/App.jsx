@@ -6,6 +6,8 @@ import Clicker from './Clicker'
 import Form from './Form'
 import Counter from './Counter'
 import Toggler from './Toggler'
+import ToggleCounter from './ToggleCounter'
+import ColorBox from './ColorBox'
 
 function App() {
   const data = [
@@ -24,10 +26,11 @@ function App() {
   ];
 
   return (<div>
-    <Toggler />
+    <ColorBox color={'orange'} />
+    <ToggleCounter />
     <Counter />
     <Clicker message={'hi'} buttonText={'Please text me'} />
-    <Clicker message={'hi'} buttonText={'Please text me'} />
+    {/*    */}
     <Form />
     <PropertyList properties={properties} />
     {/* <ShoppingList items={data} /> */}
